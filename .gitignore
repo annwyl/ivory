@@ -1,0 +1,8 @@
+/ivorybin
+/logs/
+/data/
+
+# keep proxy lists out of the repo except the example
+/proxies/*.txt
+/proxies/*.json
+!/proxies/example.txt

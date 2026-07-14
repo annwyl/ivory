@@ -1,0 +1,30 @@
+{
+  "log_file": "logs/ivory.log",
+  "log_level": "info",
+  "store": "jsonl",
+  "store_config": "data/stories.jsonl",
+  "proxies": [],
+  "proxy_dir": "proxies",
+  "proxy_strategy": "round_robin",
+  "proxy_max_fails": 3,
+  "proxy_cooldown": 30,
+  "proxy_window": 20,
+  "user_agents": [
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
+  ],
+  "timeout": 15,
+  "retries": 3,
+  "rate_limit": 200,
+  "max_concurrent": 8,
+  "refresh_interval": 1000,
+  "crawlers": [
+    "hackernews",
+    "quotes",
+    "rss"
+  ],
+  "workers": {
+    "quotes": 2
+  },
+  "start_on_load": false
+}

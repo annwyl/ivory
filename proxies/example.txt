@@ -1,0 +1,6 @@
+# one proxy per line, blank lines and # comments are ignored
+# scheme://host:port  -  http, https or socks5
+# use http://user:pass@host:port for authenticated proxies
+#
+# http://127.0.0.1:8080
+# socks5://127.0.0.1:1080
