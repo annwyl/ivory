@@ -18,7 +18,7 @@ go build -o ivorybin ./cmd/ivory
 ./ivorybin
 ```
 
-Use the arrow keys to pick a crawler and `s` / `x` / `r` to start, stop and reload it. `enter` opens a detail view (its config, stats and own logs), `/` filters the list, `e` opens `config.json` in `$EDITOR` and reloads it on save, `tab` swithces to the proxy view, `a` starts all, `X` stops all, `?` shows help and `q` quits. Run with `-plain` to get a line based shell instead.
+Use the arrow keys to pick a crawler and `s` / `x` / `r` to start, stop and reload it. `enter` opens a detail view (its config, stats and own logs), `/` filters the list, `e` opens `config.json` in `$EDITOR` and reloads it on save, `tab` switches to the proxy view, `a` starts all, `X` stops all, `?` shows help and `q` quits. Run with `-plain` to get a line based shell instead.
 
 A crawler exposes its own settings to the detail view. There are a few examples in `crawlers/`: `hackernews` (json api), `quotes` (html scraping with pagination), `rss` (xml feed) and `skeleton`, as a template.
 
@@ -99,4 +99,4 @@ This is a single node tool, not a distributed system, a few things are out of sc
 
 ### License
 
-0BSD — do whatever you like with it, no attribution needed. See LICENSE.
+0BSD See LICENSE. Just do whatever you want with it.

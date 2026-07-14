@@ -190,7 +190,7 @@ func (p *Pool) Size() int {
 	return len(p.proxies)
 }
 
-// rate is successrate over a sliding window, fresh proxy with no history is seen as good so it gets tried
+// rate is success rate over a sliding window, fresh proxy with no history is seen as good so it gets tried
 func (p *Pool) rate(pr *Proxy) float64 {
 	if len(pr.window) == 0 {
 		return 1

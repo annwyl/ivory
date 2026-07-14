@@ -16,7 +16,7 @@ type Runtime struct {
 
 func (rt *Runtime) Get(ctx context.Context, url string) (*Response, error) {
 	resp, err := rt.fetcher.Get(ctx, url)
-	// a cancelled context is us stopping the crawler not a real error (hopefully)
+	// a cancelled context is us stopping the crawler not a real error (hopefully, dont let a crawler wrap its own context with its own timeout)
 	if err != nil && ctx.Err() == nil && rt.stats != nil {
 		rt.stats.errors.Add(1)
 	}
